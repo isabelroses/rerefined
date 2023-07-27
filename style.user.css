@@ -1,0 +1,268 @@
+/* ==UserStyle==
+@name           rerefined
+@namespace      github.com/isabelroses/rerefined
+@version        0.0.1
+@description    A collection of my personal choices of websites that are refined by a userstyle
+@author         isabelroses <isabel@isabelroses.com> (https://isabel.contact)
+@homepageURL    https://github.com/isabelroses/rerefined
+@supportURL     https://github.com/isabelroses/rerefined/issues
+@updateURL      https://github.com/isabelroses/rerefined/raw/main/style.user.css
+@license        GPL-3.0
+
+@preprocessor less
+@var checkbox searxngvim "searxng - Vim mode?" 0
+@advanced checkbox ytdlbtn "Youtube - Hide download button" 0
+@advanced checkbox ythiderichdata "Youtube - Hide the extra information on a video" 0
+@advanced checkbox comicksidebar "Comick - Hide the sidebar on the home page" 0
+==/UserStyle== */
+
+@-moz-document url-prefix("http://ransack.i2p/"),
+url-prefix("https://darmarit.org/searx/"),
+url-prefix("https://de.xcxc.ml/"),
+url-prefix("https://dynabyte.ca/"),
+url-prefix("https://etsi.me/"),
+url-prefix("https://icanfindit.online/"),
+url-prefix("https://jackgoss.xyz/"),
+url-prefix("https://jsearch.pw/"),
+url-prefix("https://metasearch.nl/"),
+url-prefix("https://northboot.xyz/"),
+url-prefix("https://notsearch.uk/"),
+url-prefix("https://opnxng.com/"),
+url-prefix("https://paulgo.io/"),
+url-prefix("https://priv.au/"),
+url-prefix("https://privatus.live/"),
+url-prefix("https://s.frlt.one/"),
+url-prefix("https://s.zhaocloud.net/"),
+url-prefix("https://saber.tk/"),
+url-prefix("https://search.0relay.com/"),
+url-prefix("https://search.affusio.com/"),
+url-prefix("https://search.bus-hit.me/"),
+url-prefix("https://search.callmeecho.dev/"),
+url-prefix("https://search.chemicals-in-the-water.eu/"),
+url-prefix("https://search.cronobox.one/"),
+url-prefix("https://search.disroot.org/"),
+url-prefix("https://search.ethibox.fr/"),
+url-prefix("https://search.gcomm.ch/"),
+url-prefix("https://search.kiwitalk.de/"),
+url-prefix("https://search.mdosch.de/"),
+url-prefix("https://search.mpx.wtf/"),
+url-prefix("https://search.neet.works/"),
+url-prefix("https://search.ononoki.org/"),
+url-prefix("https://search.privacyguides.net/"),
+url-prefix("https://search.projectsegfau.lt/"),
+url-prefix("https://search.rabbit-company.com/"),
+url-prefix("https://search.rhscze.cf/"),
+url-prefix("https://search.rowie.at/"),
+url-prefix("https://search.sapti.me/"),
+url-prefix("https://search.serginho.dev/"),
+url-prefix("https://search.smnz.de/"),
+url-prefix("https://search.snopyta.org/"),
+url-prefix("https://search.stinpriza.org/"),
+url-prefix("https://search.teamriverbubbles.com/"),
+url-prefix("https://search.trom.tf/"),
+url-prefix("https://search.unlocked.link/"),
+url-prefix("https://search.uspersec.com/"),
+url-prefix("https://search.vidhukant.xyz/"),
+url-prefix("https://search.zzls.xyz/"),
+url-prefix("https://searx.baczek.me/"),
+url-prefix("https://searx.be/"),
+url-prefix("https://searx.becomesovran.com/"),
+url-prefix("https://searx.bissisoft.com/"),
+url-prefix("https://searx.chocoflan.net/"),
+url-prefix("https://searx.divided-by-zero.eu/"),
+url-prefix("https://searx.dresden.network/"),
+url-prefix("https://searx.ebnar.xyz/"),
+url-prefix("https://searx.ericaftereric.top/"),
+url-prefix("https://searx.esmailelbob.xyz/"),
+url-prefix("https://searx.fi/"),
+url-prefix("https://searx.fmac.xyz/"),
+url-prefix("https://searx.fossencdi.org/"),
+url-prefix("https://searx.gnous.eu/"),
+url-prefix("https://searx.gnu.style/"),
+url-prefix("https://searx.kujonello.cf/"),
+url-prefix("https://searx.mastodontech.de/"),
+url-prefix("https://searx.mha.fi/"),
+url-prefix("https://searx.mistli.net/"),
+url-prefix("https://searx.mxchange.org/"),
+url-prefix("https://searx.nakhan.net/"),
+url-prefix("https://searx.namejeff.xyz/"),
+url-prefix("https://searx.netzspielplatz.de/"),
+url-prefix("https://searx.nixnet.services/"),
+url-prefix("https://searx.org/"),
+url-prefix("https://searx.orion-hub.fr/"),
+url-prefix("https://searx.priv.pw/"),
+url-prefix("https://searx.prvcy.eu/"),
+url-prefix("https://searx.rimkus.it/"),
+url-prefix("https://searx.roflcopter.fr/"),
+url-prefix("https://searx.ru/"),
+url-prefix("https://searx.run/"),
+url-prefix("https://searx.semipvt.com/"),
+url-prefix("https://searx.sethforprivacy.com/"),
+url-prefix("https://searx.sev.monster/"),
+url-prefix("https://searx.slipfox.xyz/searx/"),
+url-prefix("https://searx.sp-codes.de/"),
+url-prefix("https://searx.stuehieyr.com/"),
+url-prefix("https://searx.tiekoetter.com/"),
+url-prefix("https://searx.tuxcloud.net/"),
+url-prefix("https://searx.tyil.nl/"),
+url-prefix("https://searx.vanwa.tech/"),
+url-prefix("https://searx.webheberg.info/"),
+url-prefix("https://searx.xyz/"),
+url-prefix("https://searx.zapashcanon.fr/"),
+url-prefix("https://searx.zcyph.cc/"),
+url-prefix("https://searxng.ir/"),
+url-prefix("https://searxng.nicfab.eu/"),
+url-prefix("https://searxng.zackptg5.com/"),
+url-prefix("https://serx.ml/"),
+url-prefix("https://sh0.it/"),
+url-prefix("https://soek.allesbeste.com/"),
+url-prefix("https://spot.ecloud.global/"),
+url-prefix("https://srx.cosmohub.io/"),
+url-prefix("https://searx.oakleycord.dev/"),
+url-prefix("https://suche.dasnetzundich.de/"),
+url-prefix("https://suche.tromdienste.de/"),
+url-prefix("https://suche.uferwerk.org/"),
+url-prefix("https://swag.pw/"),
+url-prefix("https://sx.catgirl.cloud/"),
+url-prefix("https://timdor.noip.me/searx/"),
+url-prefix("https://trydex.tk/searxng/"),
+url-prefix("https://www.gruble.de/"),
+url-prefix("https://www.webrats.xyz/"),
+url-prefix("https://xcxc.ml/"),
+url-prefix("https://xo.wtf/"),
+url-prefix("https://search.isabelroses.com") {
+
+    /* searxng */
+    #sidebar-end-collapsable,
+    details > summary::-webkit-details-marker,
+    #suggestions,
+    #search_url,
+    #sidebar .title,
+    #language,
+    .engines,
+    a[href="/preferences"] span,
+    a[href="/info/en/about"] {
+        display: none !important;
+    }
+    #results {
+        gap: 0 10rem;
+    }
+    #sidebar .infobox {
+        border: 0.2rem solid var(--color-sidebar-font);
+        border-radius: 1rem;
+        padding: 1rem;
+    }
+    & when (@searxngvim =0) {
+        article[data-vim-selected] {
+            border-left: .2rem solid transparent;
+            background: 0;
+        }
+    }
+    details > summary {
+        list-style: none;
+    }
+}
+
+@-moz-document regexp('https?:\\/\\/(?!gaming\\.)(?!consent\\.)(?!vr\\.)(?!music\\.)(?!tv\\.)(?!artists\\.)(?!studio\\.).*youtube(?!kids\\.).*\\.com\\/(?!premium|howyoutubeworks).*$') {
+
+    /* youtube.com */
+    /* hide download button */
+    & when (@ytdlbtn = 1) {
+        ytd-download-button-renderer {
+            display: none;
+        }
+    }
+    /* extra game info thing */
+    & when (@ythiderichdata = 1) {
+        ytd-video-description-infocards-section-renderer,
+        .ytd-rich-metadata-row-renderer {
+            display: none;
+        }
+    }
+    #contents.ytd-rich-grid-renderer {
+        padding-top: 8px;
+    }
+    ytd-rich-shelf-renderer {
+        border-top: 0;
+    }
+    ytd-rich-shelf-renderer[is-show-more-hidden] #dismissible.ytd-rich-shelf-renderer,
+    .expand-collapse-button.ytd-rich-shelf-renderer {
+        border-bottom: 0;
+    }
+    #voice-search-button,
+    #masthead-container.ytd-app::after,
+    #rich-shelf-header,
+    #footer,
+    #foreground-content.ytd-statement-banner-renderer,
+    ytd-feed-filter-chip-bar-renderer {
+        display: none;
+    }
+    #guide-renderer #sections {
+        ytd-guide-section-renderer:nth-child(2) {
+            border-bottom: 0;
+        }
+        ytd-guide-section-renderer:nth-child(3),
+        ytd-guide-section-renderer:nth-child(4),
+        ytd-guide-section-renderer:nth-child(5) {
+            display: none;
+        }
+    }
+}
+
+@-moz-document url-prefix(https://comick.app) {
+    /* comick */
+    /* side bar on home page */
+    & when (@comicksidebar = 1) {
+        .float-right {
+            display: none;
+        }
+    }
+    @media (min-width: 1280px) {
+        .xl\:w-9\/12 {
+            width: 100%;
+        }
+    }
+    @media (min-width: 768px) {
+        .md\:w-8\/12 {
+            width: 100%;
+        }
+    }
+}
+
+@-moz-document url(https://todo.isabelroses.com/projects/3/kanban#share-auth-token=nTSpRoqUTRECeVjSXKhqsvWJaMyAYXfaexAnIAFY) {
+    /* my nixos config tracker */
+    .menu-bottom-link,
+    svg[alt="Vikunja"],
+    .title {
+        display: none;
+    }
+}
+
+@-moz-document domain("chatreplay.stream") {
+  /* chatreplay.steam */
+  a[href="/donate"],
+  #_video_1,
+  #contact,
+  #side-b,
+  footer.tmgko.tmgko,
+  .card.c1cw4bqg.c1cw4bqg {
+    display: none;
+  }
+  .container.c1cw4bqg.c1cw4bqg {
+    min-height: 0;
+    margin: 0;
+  }
+  @media (min-width: 1280px) {
+    .topbar.c1j5psx1.c1j5psx1,
+    #center.tmgko.tmgko {
+      max-width: 1920px;
+    }
+    .content.tmgko.tmgko {
+      margin: 0;
+      justify-content: flex-start;
+    }
+    #side-a.tmgko.tmgko {
+      width: auto !important;
+    }
+  }
+}
