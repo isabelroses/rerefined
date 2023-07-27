@@ -1,10 +1,11 @@
 <div align="center">
 
 # Rerefined
-## A collection of my personal choices of websites that are refined by a userstyle
+
+A collection of my personal choices of websites that are refined by a userstyle
 
 [![stars](https://img.shields.io/github/stars/isabelroses/rerefined?color=f5c2e7&labelColor=303446&style=for-the-badge&logo=starship&logoColor=f5c2e7)](https://img.shields.io/github/stars/isabelroses/rerefined?color=f5c2e7&labelColor=303446&style=for-the-badge&logo=starship&logoColor=f5c2e7)
-[![ko-fi](https://img.shields.io/static/v1?label=&message=Buy%20me%20a%20Coffee&style=for-the-badge&color=e6e9ef&labelColor=ccd0da&logo=kofi)](kofi)
+[![ko-fi](https://img.shields.io/static/v1?label=&message=Buy%20me%20a%20Coffee&style=for-the-badge&color=e6e9ef&labelColor=ccd0da&logo=kofi)][kofi]
 
 &nbsp;
 
@@ -12,16 +13,16 @@
 
 </div>
 
-> **Note** <br>
-> If you appreciate what I'm doing here please feel free to [dontate](kofi) <br>
+> **Note!** <br>
+> If you appreciate what I'm doing here please feel free to [dontate][kofi] <br>
 > however please don't feel force this is a project for fun ♡
 
 ## Installation
 
 To install either
 
-- Navigate to the raw [style.user.css](install) file
-- Click this [link](install)
+- Navigate to the raw [style.user.css][install] file
+- Click this [link][install]
 - Or get it from [userstyles.world](https://userstyles.world/)
 
 ## Customise
