@@ -14,7 +14,7 @@ A collection of my personal choices of websites that are refined by a userstyle
 </div>
 
 > **Note!** <br>
-> If you appreciate what I'm doing here please feel free to [dontate][kofi] <br>
+> If you appreciate what I'm doing here please feel free to [donate][kofi] <br>
 > however please don't feel force this is a project for fun ♡
 
 ## Installation
@@ -23,7 +23,7 @@ To install either
 
 - Navigate to the raw [style.user.css][install] file
 - Click this [link][install]
-- Or get it from [userstyles.world](https://userstyles.world/)
+- Or get it from [userstyles.world](https://userstyles.world/style/11172/rerefined)
 
 ## Customise
 
