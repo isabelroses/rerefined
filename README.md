@@ -13,7 +13,7 @@ A collection of my personal choices of websites that are refined by a userstyle
 
 </div>
 
-> **Note!** <br>
+> [!NOTE]
 > If you appreciate what I'm doing here please feel free to [donate][kofi] <br>
 > however please don't feel force this is a project for fun ♡
 
