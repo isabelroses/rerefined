@@ -1,7 +1,7 @@
-/* ==UserStyle==
+/*==UserStyle==
 @name           rerefined
 @namespace      github.com/isabelroses/rerefined
-@version        0.0.2
+@version        0.0.4
 @description    A collection of my personal choices of websites that are refined by a userstyle
 @author         isabelroses <isabel@isabelroses.com> (https://isabel.contact)
 @homepageURL    https://github.com/isabelroses/rerefined
@@ -13,7 +13,7 @@
 @var checkbox searxngvim "searxng - Vim mode?" 0
 @advanced checkbox ytdlbtn "Youtube - Hide download button" 0
 @advanced checkbox ythiderichdata "Youtube - Hide the extra information on a video" 0
-==/UserStyle== */
+==/UserStyle==*/
 @-moz-document url-prefix("http://ransack.i2p/"),
 url-prefix("https://darmarit.org/searx/"),
 url-prefix("https://de.xcxc.ml/"),
@@ -130,166 +130,203 @@ url-prefix("https://xcxc.ml/"),
 url-prefix("https://xo.wtf/"),
 url-prefix("https://search.isabelroses.com") {
 
-  /* searxng */
-  #sidebar-end-collapsable,
-  details > summary::-webkit-details-marker,
-  #suggestions,
-  #search_url,
-  #sidebar .title,
-  #language,
-  .engines,
-  a[href="/preferences"] span,
-  a[href="/info/en/about"] {
-    display: none !important;
-  }
-  #results {
-    gap: 0 10rem;
-  }
-  #sidebar .infobox {
-    border: 0.2rem solid var(--color-sidebar-font);
-    border-radius: 1rem;
-    padding: 1rem;
-  }
-  & when (@searxngvim =0) {
-    article[data-vim-selected] {
-      border-left: .2rem solid transparent;
-      background: 0;
+    /* searxng */
+    #sidebar-end-collapsable,
+    details > summary::-webkit-details-marker,
+    #suggestions,
+    #search_url,
+    #sidebar .title,
+    #language,
+    .engines,
+    a[href="/preferences"] span,
+    a[href="/info/en/about"] {
+        display: none !important;
     }
-  }
-  details > summary {
-    list-style: none;
-  }
+    #results {
+        gap: 0 10rem;
+    }
+    #sidebar .infobox {
+        border: 0.2rem solid var(--color-sidebar-font);
+        border-radius: 1rem;
+        padding: 1rem;
+    }
+    & when (@searxngvim =0) {
+        article[data-vim-selected] {
+            border-left: .2rem solid transparent;
+            background: 0;
+        }
+    }
+    details > summary {
+        list-style: none;
+    }
 }
 
 @-moz-document regexp('https?:\\/\\/(?!gaming\\.)(?!consent\\.)(?!vr\\.)(?!music\\.)(?!tv\\.)(?!artists\\.)(?!studio\\.).*youtube(?!kids\\.).*\\.com\\/(?!premium|howyoutubeworks).*$') {
 
-  /* youtube.com */
-  /* hide download button */
-  & when (@ytdlbtn =1) {
-    ytd-download-button-renderer {
-      display: none;
+    /* youtube.com */
+    /* hide download button */
+    & when (@ytdlbtn =1) {
+        ytd-download-button-renderer {
+            display: none;
+        }
     }
-  }
-  /* extra game info thing */
-  & when (@ythiderichdata =1) {
-    ytd-video-description-infocards-section-renderer,
-    .ytd-rich-metadata-row-renderer {
-      display: none;
+    /* extra game info thing */
+    & when (@ythiderichdata =1) {
+        ytd-video-description-infocards-section-renderer,
+        .ytd-rich-metadata-row-renderer {
+            display: none;
+        }
     }
-  }
-  #contents.ytd-rich-grid-renderer {
-    padding-top: 8px;
-  }
-  ytd-rich-shelf-renderer {
-    border-top: 0;
-  }
-  ytd-rich-shelf-renderer[is-show-more-hidden] #dismissible.ytd-rich-shelf-renderer,
-  .expand-collapse-button.ytd-rich-shelf-renderer {
-    border-bottom: 0;
-  }
-  #voice-search-button,
-  #masthead-container.ytd-app::after,
-  #rich-shelf-header,
-  #footer,
-  #foreground-content.ytd-statement-banner-renderer,
-  ytd-feed-filter-chip-bar-renderer {
-    display: none;
-  }
-  #guide-renderer #sections {
-    ytd-guide-section-renderer:nth-child(2) {
-      border-bottom: 0;
+    #contents.ytd-rich-grid-renderer {
+        padding-top: 8px;
     }
-    ytd-guide-section-renderer:nth-child(3),
-    ytd-guide-section-renderer:nth-child(4),
-    ytd-guide-section-renderer:nth-child(5) {
-      display: none;
+    ytd-rich-shelf-renderer {
+        border-top: 0;
     }
-  }
+    ytd-rich-shelf-renderer[is-show-more-hidden] #dismissible.ytd-rich-shelf-renderer,
+    .expand-collapse-button.ytd-rich-shelf-renderer {
+        border-bottom: 0;
+    }
+    #voice-search-button,
+    #masthead-container.ytd-app::after,
+    #rich-shelf-header,
+    #footer,
+    #foreground-content.ytd-statement-banner-renderer,
+    ytd-feed-filter-chip-bar-renderer {
+        display: none;
+    }
+    #guide-renderer #sections {
+        ytd-guide-section-renderer:nth-child(2) {
+            border-bottom: 0;
+        }
+        ytd-guide-section-renderer:nth-child(3),
+        ytd-guide-section-renderer:nth-child(4),
+        ytd-guide-section-renderer:nth-child(5) {
+            display: none;
+        }
+    }
 }
 
-@-moz-document url-prefix(https://comick.app) {
-  /* comick */
-  /* side bar on home page */
-  .float-right {
+@-moz-document domain(comick.app) {
+/* comick */
+/* side bar on home page */
+.float-right {
     display: none;
-  }
-  @media (min-width: 1280px) {
+}
+@media (min-width: 1280px) {
     .xl\:w-9\/12 {
-      width: 100%;
+        width: 100%;
     }
-  }
-  @media (min-width: 768px) {
+}
+@media (min-width: 768px) {
     .md\:w-8\/12 {
-      width: 100%;
+        width: 100%;
     }
-  }
+}
+
 }
 
 @-moz-document domain("chatreplay.stream") {
-  /* chatreplay.steam */
-  a[href="/donate"],
-  #_video_1,
-  #contact,
-  #side-b,
-  footer.tmgko.tmgko,
-  .card.c1cw4bqg.c1cw4bqg {
-    display: none;
-  }
-  .container.c1cw4bqg.c1cw4bqg {
-    min-height: 0;
-    margin: 0;
-  }
-  @media (min-width: 1280px) {
-    .topbar.c1j5psx1.c1j5psx1,
-    #center.tmgko.tmgko {
-      max-width: 1920px;
+    /* chatreplay.steam */
+    a[href="/donate"],
+    #_video_1,
+    #contact,
+    #side-b,
+    footer.tmgko.tmgko,
+    .card.c1cw4bqg.c1cw4bqg {
+        display: none;
     }
-    .content.tmgko.tmgko {
-      margin: 0;
-      justify-content: flex-start;
+    .container.c1cw4bqg.c1cw4bqg {
+        min-height: 0;
+        margin: 0;
     }
-    #side-a.tmgko.tmgko {
-      width: auto !important;
+    @media (min-width: 1280px) {
+        .topbar.c1j5psx1.c1j5psx1,
+        #center.tmgko.tmgko {
+            max-width: 1920px;
+        }
+        .content.tmgko.tmgko {
+            margin: 0;
+            justify-content: flex-start;
+        }
+        #side-a.tmgko.tmgko {
+            width: auto !important;
+        }
     }
-  }
 }
 
 @-moz-document domain("git.isabelroses.com"), domain("codeberg.org"), domain("gitea.catppuccin.com") {
-  .page-footer, .profile-avatar-name a[href*=".rss"], .user.profile .ui.card .header {
-    display: none;
-  }
-  
-  .profile-avatar-name .username {
-    font-size: 1.5rem;
-    color: var(--color-primary);
-  }
-  
-  img.ui.avatar, .ui.avatar img, .ui.avatar svg, .ui.avatar.img, .ui.cards>.card img.avatar, .ui.cards>.card .avatar img, .ui.card img.avatar, .ui.card .avatar img {
-    border-radius: 100%
-  }
-  
-  .ui.card:first-child {
-    border-radius: 20px;
-  }
-  
-  .ui.secondary.menu .dropdown.item>.menu, .ui.text.menu .dropdown.item>.menu {
-    border-radius: 1.2rem;
-  }
-  
-  .user.profile .ui.card .extra.content>ul>li:last-child {
-    border-radius: 0 0 100% 100%;
-  }
-  
-  .ui.basic.labels .label, .ui.basic.label {
-    background: transparent;
-  }
-  
-  #navbar {
-    min-height: 42px;
-  }
-  
-  a[aria-label="Dashboard"] img {
-    width: 25px;
-    height: 25px;
-  }
+    .page-footer, .profile-avatar-name a[href*=".rss"], .user.profile .ui.card .header {
+        display: none;
+    }
+
+    .profile-avatar-name .username {
+        font-size: 1.5rem;
+        color: var(--color-primary);
+    }
+
+    img.ui.avatar, .ui.avatar img, .ui.avatar svg, .ui.avatar.img, .ui.cards>.card img.avatar, .ui.cards>.card .avatar img, .ui.card img.avatar, .ui.card .avatar img {
+        border-radius: 100%
+    }
+
+    .ui.card:first-child {
+        border-radius: 20px;
+    }
+
+    .ui.secondary.menu .dropdown.item>.menu, .ui.text.menu .dropdown.item>.menu {
+        border-radius: 1.2rem;
+    }
+
+    .user.profile .ui.card .extra.content>ul>li:last-child {
+        border-radius: 0 0 100% 100%;
+    }
+
+    .ui.basic.labels .label, .ui.basic.label {
+        background: transparent;
+    }
+
+    #navbar {
+        min-height: 42px;
+    }
+
+    a[aria-label="Dashboard"] img {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+@-moz-document regexp("https:\\/\\/www.deepl.com\\/?(.*\\/)translator.*$") {
+    .BasePageHeader-module--inner--IkflH, .dl_header_menu_v2, .dl_header:before, a[href="/write"], .pageFooterV2-module--footerOuterContainer--CwVcZ, div[data-testid="cookie-banner-strict"], .CareerBanner-module--container--cAhHB, .Quotes-module--quotes--9YWhG {
+        display: none !important;
+    }
+}
+
+@-moz-document url-prefix("https://www.linkedin.com") {
+    .global-footer-compact__content,
+    .premium-upsell-link {
+        display: none !important;
+    }
+}
+
+@-moz-document domain("last.fm") {
+
+    .your-progress .buffer-2,
+    .secondary-nav-item--month,
+    .secondary-nav-item--year,
+    .auth-dropdown-pro-text {
+        display: none !important;
+    }
+    .listening-report-promo--month,
+    .listening-report-promo--year {
+        display: none !important;
+    }
+}
+
+@-moz-document domain("noogle.dev") {
+    #__next div {
+        overflow-x: hidden !important;
+    }
+    footer {
+        display: none !important;
+    }
 }
