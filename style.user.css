@@ -1,9 +1,9 @@
 /*==UserStyle==
 @name           rerefined
 @namespace      github.com/isabelroses/rerefined
-@version        0.0.5
+@version        0.0.6
 @description    A collection of my personal choices of websites that are refined by a userstyle
-@author         isabelroses <isabel@isabelroses.com> (https://isabel.contact)
+@author         isabelroses <isabel@isabelroses.com> (https://isabelroses.com)
 @homepageURL    https://github.com/isabelroses/rerefined
 @supportURL     https://github.com/isabelroses/rerefined/issues
 @updateURL      https://github.com/isabelroses/rerefined/raw/main/style.user.css
@@ -291,6 +291,7 @@ domain("search.isabelroses.com") {
 }
 
 @-moz-document regexp("https:\\/\\/www.deepl.com\\/?(.*\\/)translator.*$") {
+    header, aside, [data-testid="write-promo-banner"],
     .BasePageHeader-module--inner--IkflH, .dl_header_menu_v2, .dl_header:before, a[href="/write"], .pageFooterV2-module--footerOuterContainer--CwVcZ, div[data-testid="cookie-banner-strict"], .CareerBanner-module--container--cAhHB, .Quotes-module--quotes--9YWhG {
         display: none !important;
     }
