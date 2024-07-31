@@ -329,4 +329,17 @@ domain("search.isabelroses.com") {
         display: none !important;
     }
 }
+
+@-moz-document domain("home-manager-options.extranix.com") {
+  header, footer {
+    display: none;
+  }
+  
+  // fix wierd sizings
+  .xcontainer {
+    padding: 2rem !important;
+    margin: 0px !important;
+  }
+}
+
 // vim:ft=less
