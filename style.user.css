@@ -1,7 +1,7 @@
 /*==UserStyle==
 @name           rerefined
 @namespace      github.com/isabelroses/rerefined
-@version        0.0.6
+@version        0.0.7
 @description    A collection of my personal choices of websites that are refined by a userstyle
 @author         isabelroses <isabel@isabelroses.com> (https://isabelroses.com)
 @homepageURL    https://github.com/isabelroses/rerefined
@@ -11,7 +11,7 @@
 
 @preprocessor less
 @var checkbox searxngvim "searxng - Vim mode?" 0
-@advanced checkbox ytdlbtn "Youtube - Hide download button" 0
+@advanced checkbox ytdlbtn "Youtube - Hide misc video buttons" 0
 @advanced checkbox ythiderichdata "Youtube - Hide the extra information on a video" 0
 ==/UserStyle==*/
 
@@ -164,6 +164,9 @@ domain("search.isabelroses.com") {
     /* hide download button */
     & when (@ytdlbtn =1) {
         ytd-download-button-renderer {
+            display: none;
+        }
+        button[aria-label="Thanks"] {
             display: none;
         }
     }
