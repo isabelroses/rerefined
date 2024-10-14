@@ -13,6 +13,7 @@
 @var checkbox searxngvim "searxng - Vim mode?" 0
 @advanced checkbox ytdlbtn "Youtube - Hide misc video buttons" 0
 @advanced checkbox ythiderichdata "Youtube - Hide the extra information on a video" 0
+@advanced checkbox lowercase "Lowercase everything" 0
 ==/UserStyle==*/
 
 @-moz-document domain("ransack.i2p"),
@@ -342,6 +343,12 @@ domain("search.isabelroses.com") {
   .xcontainer {
     padding: 2rem !important;
     margin: 0px !important;
+  }
+}
+
+@-moz-document regexp(".*") {
+  & when (@lowercase =1) {
+    * { text-transform: lowercase !important }
   }
 }
 
